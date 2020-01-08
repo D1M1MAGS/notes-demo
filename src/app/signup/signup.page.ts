@@ -26,4 +26,8 @@ export class SignupPage implements OnInit {
     });
 
   }
+
+  close(){
+    this.modal.dismiss();
+  }
 }

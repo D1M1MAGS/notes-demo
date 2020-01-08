@@ -14,6 +14,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { SignupPageModule } from './signup/signup.module';
+import { AddPageModule } from './add/add.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SignupPageModule } from './signup/signup.module';
     AngularFireModule.initializeApp( environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    SignupPageModule
+    SignupPageModule,
+    AddPageModule
   ],
   providers: [
     StatusBar,
